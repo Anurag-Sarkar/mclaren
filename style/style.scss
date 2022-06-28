@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Sawarabi+Mincho&display=swap');
+*{
+    padding: 0%;
+    font-family: 'Josefin Slab', serif;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body,html{
+    // overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+#main{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    #senna{
+        overflow: hidden;
+        font-size: 250px;
+        position: absolute;
+        left: 10%;
+        font-weight: 600;
+        bottom: 20%;
+        z-index: 99;
+        transform: rotate(-90deg);
+        h5{
+            // transform: translateY(100%);
+        }
+    }
+    #mclaren{
+        // background-color: red;
+        position: absolute;
+        z-index: 99;
+        width: 20%;
+        height: 100px;
+        margin: 30px 70px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    
+    
+    }
+    #read{
+        padding:10px 20px;
+        border:2px solid black;
+        position: absolute;
+        bottom: 3%;
+        z-index: 4;
+        font-size: 40px;
+        background-color: black;
+        font-weight: 500;
+        color: rgb(255, 60, 0);
+        left: 4%;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            color: rgb(255, 255, 255);
+        }
+        // background-color: aqua;
+    }
+}
+#imge{
+    position: absolute;
+    top: 0%;
+    z-index: 3;
+    width: 50%;
+    left: -50%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+#left{
+    position: absolute;
+    background-color: rgb(255, 60, 0);
+    z-index: 3;
+   
+    width: 30%;
+    height: 100%;
+    
+    h1{
+        font-size: 150px;
+        position: absolute;
+        left: 50%;
+        bottom: 15%;
+        transform: rotate(-90deg);
+    }
+}
+#right{
+    overflow: hidden;
+    right: 0;
+    width: 70%;
+    position: absolute;
+    height: 100%;
+    #top{
+        width: 85%;
+        justify-content: space-between;
+        // background-color: aqua;
+        z-index: 99;
+        position: absolute;
+        color: white;
+        top: 5%;
+        display: flex;
+        transform: translateX(-50%);
+        left: 50%;
+        #lft{
+            h2{
+                transition: 1s;
+            }
+        }
+        #rht{
+            width: 13%;
+            display: flex;
+            justify-content: space-between;
+            #menu{
+                i{
+                    font-size: 20px;
+                }
+            }
+            #search{
+                display: flex;
+                i{
+                    font-size: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    #slideno{
+        position: absolute;
+        // background-color: red;
+        width: 10%;
+        z-index: 7;
+        bottom: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        right: 10%;
+        height: 20px;
+        #one{
+            width: 25%;
+            height: 3px;
+            transition: 0.5s;
+            background-color: grey;
+            }
+    }
+    #overlay{
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        z-index: 2;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.245);
+        #content{
+            overflow: hidden;
+            bottom: 0%;
+            left: 7%;
+            z-index: 99;
+            padding: 100px 0px;
+            // background-color: rgb(26, 92, 92);
+            color: white;
+            position: absolute;
+            transition: 1s;
+            h4{
+                font-size: 30px;
+                transition: 0.7s;
+            }
+            h1{
+                transition: 0.8s;
+                margin: 20px 0px;
+                transition-delay: 0.1s;
+                font-size: 60px;
+            }
+            p{
+                transition: 0.9s;
+                transition-delay: 0.2s;
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+    #slider{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        .slides{
+            // transform: translateX(-100%);
+            flex: none;
+            width: 100%;
+            height: 100%;
+            transition-timing-function:ease-in-out;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+    }
+}
+#data{
+    // background-color: red;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    z-index: 99;
+    #up{
+        width: 90%;
+        // background-color: red;
+        border-bottom: 2px solid black ;
+        padding-bottom: 40px;
+
+        h1{
+            text-align: center;
+        }
+    }
+    #mid{
+        width: 90%;
+        padding:40px 0px ;
+    
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #details1{
+            margin-top:20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            #hp{
+                margin: 0px 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #d{
+                    display: flex;
+                    align-items: baseline;
+                }
+
+            }
+        }
+    }
+   
+}
+.lol{
+    transform: translateY(900%);
+}
+#data img{
+    margin-top: 80px;
+}
+#data #cross{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: -5%;
+    left: -10%;
+    opacity:0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+#cross i{
+    color: white;
+    font-size: 30px;
+}
